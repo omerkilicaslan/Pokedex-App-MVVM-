@@ -14,6 +14,7 @@
 		DEDA0ECA288D7DA9002BB1E4 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0EC9288D7DA9002BB1E4 /* PokemonCell.swift */; };
 		DEDA0ECC288D825B002BB1E4 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0ECB288D825B002BB1E4 /* PokedexView.swift */; };
 		DEDA0ECE288D849A002BB1E4 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0ECD288D849A002BB1E4 /* Pokemon.swift */; };
+		DEDA0ED0288D8701002BB1E4 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0ECF288D8701002BB1E4 /* PokemonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DEDA0EC9288D7DA9002BB1E4 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
 		DEDA0ECB288D825B002BB1E4 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
 		DEDA0ECD288D849A002BB1E4 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		DEDA0ECF288D8701002BB1E4 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DEDA0EC8288D7D6F002BB1E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DEDA0ECF288D8701002BB1E4 /* PokemonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				DEDA0ECE288D849A002BB1E4 /* Pokemon.swift in Sources */,
 				DEDA0EBB288D7CF8002BB1E4 /* ContentView.swift in Sources */,
+				DEDA0ED0288D8701002BB1E4 /* PokemonViewModel.swift in Sources */,
 				DEDA0EB9288D7CF8002BB1E4 /* Pokedex_App__MVVM_App.swift in Sources */,
 				DEDA0ECA288D7DA9002BB1E4 /* PokemonCell.swift in Sources */,
 				DEDA0ECC288D825B002BB1E4 /* PokedexView.swift in Sources */,
