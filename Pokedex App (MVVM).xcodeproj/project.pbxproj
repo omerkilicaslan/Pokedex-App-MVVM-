@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE578C6D288E75C100E499F0 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE578C6C288E75C100E499F0 /* ProgressBar.swift */; };
+		DE578C6F288E7D1700E499F0 /* ProgressBarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE578C6E288E7D1700E499F0 /* ProgressBarRow.swift */; };
+		DEA87CF728903317004BC538 /* PokemonAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA87CF628903317004BC538 /* PokemonAddView.swift */; };
 		DEDA0EB9288D7CF8002BB1E4 /* Pokedex_App__MVVM_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0EB8288D7CF8002BB1E4 /* Pokedex_App__MVVM_App.swift */; };
 		DEDA0EBB288D7CF8002BB1E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA0EBA288D7CF8002BB1E4 /* ContentView.swift */; };
 		DEDA0EBD288D7CF9002BB1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDA0EBC288D7CF9002BB1E4 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE578C6C288E75C100E499F0 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		DE578C6E288E7D1700E499F0 /* ProgressBarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarRow.swift; sourceTree = "<group>"; };
+		DEA87CF628903317004BC538 /* PokemonAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAddView.swift; sourceTree = "<group>"; };
 		DEDA0EB5288D7CF8002BB1E4 /* Pokedex App (MVVM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokedex App (MVVM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDA0EB8288D7CF8002BB1E4 /* Pokedex_App__MVVM_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_App__MVVM_App.swift; sourceTree = "<group>"; };
 		DEDA0EBA288D7CF8002BB1E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 				DEDA0EC9288D7DA9002BB1E4 /* PokemonCell.swift */,
 				DEDA0ECB288D825B002BB1E4 /* PokedexView.swift */,
 				DEDA0ED4288D964D002BB1E4 /* PokeDetailView.swift */,
+				DE578C6C288E75C100E499F0 /* ProgressBar.swift */,
+				DE578C6E288E7D1700E499F0 /* ProgressBarRow.swift */,
+				DEA87CF628903317004BC538 /* PokemonAddView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,11 +194,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDA0ECE288D849A002BB1E4 /* Pokemon.swift in Sources */,
+				DE578C6F288E7D1700E499F0 /* ProgressBarRow.swift in Sources */,
 				DEDA0EBB288D7CF8002BB1E4 /* ContentView.swift in Sources */,
 				DEDA0ED0288D8701002BB1E4 /* PokemonViewModel.swift in Sources */,
 				DEDA0EB9288D7CF8002BB1E4 /* Pokedex_App__MVVM_App.swift in Sources */,
 				DEDA0ECA288D7DA9002BB1E4 /* PokemonCell.swift in Sources */,
+				DEA87CF728903317004BC538 /* PokemonAddView.swift in Sources */,
 				DEDA0ED5288D964D002BB1E4 /* PokeDetailView.swift in Sources */,
+				DE578C6D288E75C100E499F0 /* ProgressBar.swift in Sources */,
 				DEDA0ECC288D825B002BB1E4 /* PokedexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

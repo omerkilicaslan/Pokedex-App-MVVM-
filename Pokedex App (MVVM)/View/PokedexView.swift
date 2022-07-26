@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PokedexView: View {
     
+    private let gridItemCollection = [GridItem(.flexible())]
     private let gridItems = [GridItem(.flexible()),GridItem(.flexible())]
 
     @ObservedObject var viewModel = PokemonViewModel()
@@ -17,24 +18,63 @@ struct PokedexView: View {
         
         NavigationView{
             
-            ScrollView {
+            
+            VStack(spacing: 5){
                 
-                LazyVGrid(columns: gridItems, spacing: 16) {
+                ScrollView(.horizontal){
                     
-                    ForEach(viewModel.pokemon) { pokemon in
+                    LazyHGrid(rows: gridItemCollection, spacing: 16) {
                         
-                        NavigationLink {
-                            PokeDetailView(pokemon: pokemon)
-                        } label: {
-                            PokemonCell(pokemon: pokemon, viewModel: viewModel)
+                        ForEach(viewModel.pokemon) { pokemon in
+                            
+                            NavigationLink {
+                                PokeDetailView(pokemon: pokemon)
+                            } label: {
+                                PokemonCell(pokemon: pokemon, viewModel: viewModel, widthValue: 200, heightValue: 250)
+                                    
+                            }
+                            
                         }
                         
                     }
+                    
+                    .padding()
+                    
+                    
+                    
                 }
                 
+
+                ScrollView {
+                    
+                    LazyVGrid(columns: gridItems, spacing: 16) {
+                        
+                        ForEach(viewModel.pokemon) { pokemon in
+                            
+                            NavigationLink {
+                                PokeDetailView(pokemon: pokemon)
+                            } label: {
+                                PokemonCell(pokemon: pokemon, viewModel: viewModel, widthValue: 200, heightValue: 120)
+                            }
+                            
+                        }
+                    }
+                    
+                    
+                }
+                .navigationTitle("Pokemon")
                 
+                Spacer()
+            }.toolbar {
+                NavigationLink {
+                    PokemonAddView()
+                } label: {
+                    Image(systemName: "plus")
+                }
+
+
             }
-            .navigationTitle("Pokemon")
+            
             
         }
         

@@ -12,6 +12,7 @@ struct PokemonCell: View {
     
     let pokemon: Pokemon
     let viewModel: PokemonViewModel
+    var widthValue, heightValue : CGFloat
     
     var body: some View {
         
@@ -42,13 +43,14 @@ struct PokemonCell: View {
                         .frame(width: 68, height: 68)
                         .padding([.bottom, .trailing], 4)
                 }
-            }
+            }.frame(width: widthValue, height: heightValue)
             
         }
         
         .background(Color(viewModel.backgroundColor(forType: pokemon.type)))
         .cornerRadius(12)
         .shadow(color: Color(viewModel.backgroundColor(forType: pokemon.type)), radius: 6, x: 3, y: 3)
+        
         
     }
 }

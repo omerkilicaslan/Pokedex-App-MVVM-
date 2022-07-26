@@ -14,14 +14,19 @@ struct Pokemon : Codable, Identifiable {
     let name: String
     let imageUrl: String
     let type: String
+    let description: String
+    let attack: Int
+    let defense: Int
+    let height: Int
+    let weight: Int
     
 }
 
 let MOCK_POKEMON: [Pokemon] = [
-    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison"),
-    .init(id: 1, name: "Ivysaur", imageUrl: "pokemon", type: "poison"),
-    .init(id: 2, name: "Venusaur", imageUrl: "pokemon", type: "poison"),
-    .init(id: 3, name: "Charmender", imageUrl: "pokemon", type: "fire"),
-    .init(id: 4, name: "Charmeleon", imageUrl: "pokemon", type: "fire"),
-    .init(id: 5, name: "Charizard", imageUrl: "pokemon", type: "fire")
+    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison",description: "Desc", attack: 56, defense: 53, height: 15, weight: 52),
+    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison",description: "Desc", attack: 56, defense: 53, height: 15, weight: 52),
+    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison",description: "Desc", attack: 56, defense: 53, height: 15, weight: 52),
+    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison",description: "Desc", attack: 56, defense: 53, height: 15, weight: 52),
+    .init(id: 0, name: "Bulbasaur", imageUrl: "pokemon", type: "poison",description: "Desc", attack: 56, defense: 53, height: 15, weight: 52)
+    
 ]
